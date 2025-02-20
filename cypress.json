@@ -1,0 +1,9 @@
+{
+    "baseUrl": "http://localhost:3000",  // Defina a URL da aplicação que você está testando
+    "supportFile": "cypress/support/index.js",  // Arquivo de suporte que carrega os comandos
+    "integrationFolder": "cypress/e2e",    // Pasta onde os testes de integração (tests) estão localizados
+    "fixturesFolder": "cypress/fixtures",  // Pasta onde os arquivos de dados (fixtures) de teste ficam
+    "videosFolder": "cypress/videos",      // Pasta onde vídeos dos testes podem ser armazenados
+    "screenshotsFolder": "cypress/screenshots"  // Pasta onde capturas de tela serão armazenadas
+  }
+  

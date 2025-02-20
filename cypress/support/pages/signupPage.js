@@ -21,7 +21,7 @@ class SignupPage {
     fillForm(firstName, lastName, phone, email, senha) {
       cy.get(this.firstNameField).type(firstName);
       cy.get(this.lastNameField).type(lastName);
-      cy.get(this.phoneField).type(phone);
+      cy.get(this.phoneField).clear().type(phone);
       cy.get(this.emailField).type(email);
       cy.get(this.passwordField).type(senha);
       cy.get(this.rePasswordField).type(senha);
