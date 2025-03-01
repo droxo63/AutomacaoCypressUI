@@ -37,6 +37,5 @@ class SignupPage {
     }
   }
   
-  // Exportando a instância da classe diretamente
 
   export default new SignupPage();
