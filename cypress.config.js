@@ -8,3 +8,15 @@ module.exports = defineConfig({
     },
   },
 });
+
+module.exports = {
+
+  e2e: {
+ 
+   viewportWidth: 1280,
+ 
+   viewportHeight: 720
+ 
+  }
+ 
+ }
