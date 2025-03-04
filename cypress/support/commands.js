@@ -51,6 +51,8 @@ Cypress.Commands.add("cadastro", (firstName, lastName, email, senha) => {
   // Verificando se o nome do usuário aparece na página de conta
   SignupPage.verifyUserName(userFirstName);
 });
-Cypress.Commands.add("hello", () => {
-    cy.log("Hello, Cypress!");
+Cypress.Commands.add("login", () => {
+  cy.get('[data-testid="email"]').type("cliente@ebac.com.br")
+  cy.get('[data-testid="password"]').type("123456")
+  cy.get('[data-testid="btnLogin"]').click()
   });
