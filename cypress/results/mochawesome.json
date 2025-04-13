@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-13T17:52:56.492Z",
+    "end": "2025-04-13T17:53:04.229Z",
+    "duration": 7737,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2544e7ce-dbfd-4b7e-84ca-3987f4eb5dc8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastoEbacV2.cy.js",
+      "file": "cypress\\e2e\\cadastoEbacV2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "183447cf-751a-41c5-b563-cbbe700808a6",
+          "title": "Testes de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve cadastrar um usuário com sucesso",
+              "fullTitle": "Testes de cadastro Deve cadastrar um usuário com sucesso",
+              "timedOut": null,
+              "duration": 7680,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.cadastro(); // Chama o comando cadastro com dados aleatórios",
+              "err": {},
+              "uuid": "a07ce377-b41c-4ba3-9ffa-c2fa9f40e3ab",
+              "parentUUID": "183447cf-751a-41c5-b563-cbbe700808a6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a07ce377-b41c-4ba3-9ffa-c2fa9f40e3ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7680,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "reportFilename": "mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
