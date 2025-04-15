@@ -13,34 +13,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+        continue-on-error: true
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Start app and run tests
-      run: |
-        npm run start & # ou outro comando para iniciar sua aplicação
-        npx wait-on http://localhost:3000
-        npm run cy:run
+      - name: Run Cypress Tests
+        run: npx cypress run --browser chrome
 
-    - name: Generate Report
-      run: |
-        npm run cy:report
-        npm run cy:report:html
-
-    - name: Publish Report
-      uses: crazy-max/ghaction-github-pages@v3
-      with:
-        target_branch: gh-pages
-        build_dir: mochawesome-report
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: Publish Report
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: mochawesome-report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
