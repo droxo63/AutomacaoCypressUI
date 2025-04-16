@@ -26,13 +26,12 @@ jobs:
         run: npm install
 
       - name: Run Cypress Tests
-        run: npx cypress run --browser chrome
+        run: npm run cy:full-report
 
       - name: Publish Report
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          "reportDir": "cypress/results"
+          build_dir: cypress/results
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
