@@ -24,7 +24,7 @@ jobs:
       with:
       install-command: npm install
       browser: chrome
-
+      start: npm start
       name: Publish Report
         uses: crazy-max/ghaction-github-pages@v4
         with:
