@@ -1,3 +1,10 @@
+## 👋 Olá! Eu sou Diego R. Pereira
+
+Sou um profissional em formação com foco em **Qualidade de Software** e **Testes Automatizados**. 
+Estou constantemente explorando ferramentas modernas de QA, como Cypress, Postman e Git, com projetos práticos que envolvem automação de testes E2E, testes de API REST e uso de CI/CD.
+Atualmente participo do curso da EBAC em Engenharia de Qualidade de Software, onde venho desenvolvendo projetos reais com aplicação de boas práticas, versionamento e documentação.
+
+
 ### AutomacaoCypressUI
 
 ###### Sobre o Projeto
